@@ -10,7 +10,5 @@ class ExternalApiToken(db.Model, BaseModel):
     expires_at = db.Column(db.DateTime, nullable=False)
     updated_at = db.Column(db.DateTime, nullable=False)
 
-
-
     def __repr__(self):
-        return f'{self.generateJson()}'
+        return f"<ExternalApiToken {self.updated_at}>"

@@ -37,6 +37,13 @@ class Config(object):
     MAIL_USERNAME = os.getenv("MAIL_USERNAME", "MAIL_USERNAME")
     MAIL_PASSWORD = os.getenv("MAIL_PASSWORD", "MAIL_PASSWORD")
 
+    TOKEN_ENCRYPTION_KEY = os.getenv("TOKEN_ENCRYPTION_KEY", "default_token_encryption_key")
+
+    CLIENT_ID = os.getenv("CLIENT_ID", "default_client_id")
+    CLIENT_SECRET = os.getenv("CLIENT_SECRET", "default_client_secret")
+
+    ACCOUNT_NUMBER = os.getenv("ACCOUNT_NUMBER", "default_account_number")
+    CURRENCY = os.getenv("CURRENCY", "default_currency")
 
 class TestConfig(Config):
     TESTING = True
