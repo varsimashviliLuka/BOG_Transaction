@@ -1,0 +1,91 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Python build files
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# Virtual environments
+# =========================
+venv/
+.env/
+.venv/
+ENV/
+env/
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+
+# =========================
+# Database files
+# =========================
+*.sqlite
+*.sqlite3
+*.db
+instance/
+
+# =========================
+# Flask
+# =========================
+*.log
+flask_session/
+
+# =========================
+# Migrations (optional)
+# =========================
+# If you want to track migrations, REMOVE this line
+#migrations/
+
+# =========================
+# Exported files
+# =========================
+export/
+*.csv
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Testing / coverage
+# =========================
+.coverage
+htmlcov/
+.pytest_cache/
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.bak
+*.cache
