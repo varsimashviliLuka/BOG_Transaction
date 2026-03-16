@@ -14,6 +14,8 @@ class Config(object):
     BASE_DIR = BASE_DIR
     TEMPLATES_FOLDERS = "src/templates"
 
+    DEBUG = False
+
     RESTX_MASK_SWAGGER = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
@@ -48,6 +50,6 @@ class Config(object):
 class TestConfig(Config):
     TESTING = True
     WTF_CSRF_ENABLED = False
-
+    DEBUG = True
     # Separate SQLite DB for tests
     SQLALCHEMY_DATABASE_URI = f"sqlite:///{BASE_DIR / 'test.sqlite3'}"
